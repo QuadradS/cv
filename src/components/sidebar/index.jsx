@@ -12,34 +12,37 @@ const Container = styled.div`
 const Title = styled.p`
   margin: 0;
   opacity: 0.3;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 18px;
   position: relative;
   padding: 10px 27px;
   width: fit-content;
   text-transform: uppercase;
+  background: transparent;
+  text-align: center;
+  line-height: 25px;
 
-  &:before {
-    display: block;
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 18px;
-    height: 1px;
-    width: 15px;
-    background: rgb(83 79 90 / 54%);
-  }
-
-  &:after {
-    display: block;
-    content: " ";
-    position: absolute;
-    left: 86%;
-    top: 18px;
-    height: 1px;
-    width: 152px;
-    background: rgb(83 79 90 / 54%);  
-  }
+  //&:before {
+  //  display: block;
+  //  content: " ";
+  //  position: absolute;
+  //  left: 0;
+  //  top: 18px;
+  //  height: 1px;
+  //  width: 15px;
+  //  background: rgb(83 79 90 / 54%);
+  //}
+  //
+  //&:after {
+  //  display: block;
+  //  content: " ";
+  //  position: absolute;
+  //  left: 86%;
+  //  top: 18px;
+  //  height: 1px;
+  //  width: 152px;
+  //  background: rgb(83 79 90 / 54%);  
+  //}
 `
 
 const Item = styled.a`
@@ -80,7 +83,7 @@ const Sidebar = () => {
 
             <Avatar src='/me.jpeg'/>
 
-            <Title>contacts</Title>
+            <Title>Danil Sitdikov - Sofware Developer</Title>
             <Item selected href='https://t.me/Quadrad_s' target='_blank'>
                 <span><TelegramIcon/></span>
                 <span>Telegram</span>
