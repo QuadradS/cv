@@ -4,11 +4,32 @@ import Section from "../../components/section";
 const Experience = () => {
     return (
         <>
-            <Section blockTitle='experience' title='xfamily.io'>
+
+            <Section blockTitle='experience' title='frakt.xyz'>
 
                 <p>
                     <h5>
-                        <strong>AUGUST 2021 - Current job</strong>
+                        <strong>MAY 2023 - Current job</strong>
+                    </h5>
+                </p>
+                <p>
+                    Buy, sell, earn and get liquidity instantly out of your Solana NFTs
+                </p>
+
+                <ul>
+                    <li>- Creating new features using web3</li>
+                    <li>- Creating front end part</li>
+                    <li>- Code review</li>
+                    <li>- Creating UI Front-End with SSR</li>
+                    <li>- Creating Smarcontracts with Rust</li>
+                    <li>- Nest TypeGoose and Mongo on backend</li>
+                </ul>
+            </Section>
+            <Section title='xfamily.io'>
+
+                <p>
+                    <h5>
+                        <strong>AUGUST 2021 - DECEMBER 2021</strong>
                     </h5>
                 </p>
                 <p>
