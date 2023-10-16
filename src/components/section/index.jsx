@@ -23,10 +23,10 @@ export const SectionTitle = styled.h2`
   font-weight: 300;
   background: linear-gradient(140deg, rgba(176, 133, 253, 1) 4%, rgba(144, 85, 253, 1) 96%);
   color: #fff;
-  width: 200px;
+  width: 180px;
   position: absolute;
-  top: 50px;
-  left: -200px;
+  top: 70px;
+  left: -180px;
   padding: 7px 20px;
   text-transform: uppercase;
 `
