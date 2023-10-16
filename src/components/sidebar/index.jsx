@@ -81,7 +81,7 @@ const Sidebar = () => {
     return (
         <Container>
 
-            <Avatar src='/me.jpeg'/>
+            <Avatar src='./me.jpeg'/>
 
             <Title>Danil Sitdikov - Sofware Developer</Title>
             <Item selected href='https://t.me/Quadrad_s' target='_blank'>
