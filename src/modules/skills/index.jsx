@@ -1,19 +1,17 @@
 import React from 'react';
-import HtmlCss from "./components/html-css";
-import Js from "./components/Js";
-import ReactComponent from "./components/react";
-import Node from "./components/node";
-import Eth from "./components/eth";
+import SkillsSection from "./components/SkillsSection";
+import styled from "styled-components";
 
-const Skills = () => {
+const Wrap = styled.div`
+    margin-top: 40px;
+`
+
+const Skills = ({data}) => {
     return (
-        <>
-            <HtmlCss />
-            <Js/>
-            <ReactComponent/>
-            <Node/>
-            <Eth/>
-        </>
+        <Wrap>
+            <SkillsSection data={data.skills.backend} title={'SKILLS'}/>
+            <SkillsSection data={data.skills.frontend}/>
+        </Wrap>
     )
 }
 

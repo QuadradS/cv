@@ -18,17 +18,19 @@ const Wrap = styled.div`
 `
 
 export const SectionTitle = styled.h2`
-  border-radius: 50px 0 0 50px;
-  margin: 5px 0;
-  font-weight: 300;
-  background: linear-gradient(140deg, rgba(176, 133, 253, 1) 4%, rgba(144, 85, 253, 1) 96%);
-  color: #fff;
-  width: 180px;
-  position: absolute;
-  top: 70px;
-  left: -180px;
-  padding: 7px 20px;
-  text-transform: uppercase;
+    border-radius: 0 6px;
+    margin: 5px 0;
+    font-weight: 300;
+    background: linear-gradient(140deg,rgba(176,133,253,1) 4%,rgba(144,85,253,1) 96%);
+    color: #fff;
+    min-width: 170px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: -4px 3px 10px 0px #0000001a;
 `
 
 const Section = ({blockTitle, title, children}) => {

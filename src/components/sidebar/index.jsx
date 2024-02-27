@@ -4,7 +4,7 @@ import {ReactComponent as TelegramIcon} from "../icons/telegram.svg";
 import {ReactComponent as MessageIcon} from "../icons/message.svg";
 import {ReactComponent as GithubIcon} from "../icons/github.svg";
 import {ReactComponent as PdfIcon} from "../icons/pdf.svg";
-
+import path from './me.jpeg'
 const Container = styled.div`
   width: 260px;
 `
@@ -15,7 +15,7 @@ const Title = styled.p`
   font-weight: 500;
   font-size: 18px;
   position: relative;
-  padding: 10px 27px;
+  padding: 10px 20px;
   width: fit-content;
   text-transform: uppercase;
   background: transparent;
@@ -46,27 +46,27 @@ const Title = styled.p`
 `
 
 const Item = styled.a`
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  border-radius: 0 50px 50px 0;
-  margin: 5px 0;
-  font-weight: 300;
-  min-height: 42px;
-  cursor: pointer;
-  
-  background: ${({selected}) => selected && 'linear-gradient(140deg, rgba(176,133,253,1) 4%, rgba(144,85,253,1) 96%)'};
-  color: ${({selected}) => selected ? '#fff' : '#544f5a'};
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 6px;
+    margin: 5px 0;
+    font-weight: 300;
+    min-height: 42px;
+    cursor: pointer;
 
-  & span {
-    margin-left: 8px;
-    color: inherit;
-  }
+    background: ${({selected}) => selected && 'linear-gradient(140deg, rgba(176,133,253,1) 4%, rgba(144,85,253,1) 96%)'};
+    color: ${({selected}) => selected ? '#fff' : '#544f5a'};
 
-  &:hover {
-    background: ${({selected}) => !selected && '#eeeef5'};
-  }
+    & span {
+        margin-left: 8px;
+        color: inherit;
+    }
+
+    &:hover {
+        background: ${({selected}) => !selected && '#eeeef5'};
+    }
 `
 
 const Avatar = styled.img`
@@ -77,28 +77,27 @@ const Avatar = styled.img`
   box-shadow: 0 4px 5px -2px #000
 `
 
-const Sidebar = () => {
+const Sidebar = ({data}) => {
+    const renderData = data.contacts;
     return (
         <Container>
-
-            <Avatar src='./me.jpeg'/>
-
-            <Title>Danil Sitdikov - Sofware Developer</Title>
-            <Item selected href='https://t.me/Quadrad_s' target='_blank'>
+            <Avatar src={path}/>
+            <Title>{renderData.name} - {renderData.role}</Title>
+            <Item selected href={renderData.social.telegram.url} target='_blank'>
                 <span><TelegramIcon/></span>
-                <span>Telegram</span>
+                <span>{renderData.social.telegram.label}</span>
             </Item>
-            <Item href="quadrad4@gmail.com" target='_blank'>
+            <Item href={`mailto:${renderData.social.gmail.url}`} target='_blank'>
                 <span><MessageIcon/></span>
-                <span>Gmail</span>
+                <span>{renderData.social.gmail.label}</span>
             </Item>
-            <Item href='https://github.com/QuadradS' target='_blank'>
+            <Item href={renderData.social.github.url} target='_blank'>
                 <span><GithubIcon/></span>
-                <span>Github</span>
+                <span>{renderData.social.github.label}</span>
             </Item>
-            <Item href='/cv_pdf.pdf' target='_blank'>
+            <Item href={renderData.social.pdf.url} target='_blank'>
                 <span><PdfIcon/></span>
-                <span>Download as pdf</span>
+                <span>{renderData.social.pdf.label}</span>
             </Item>
         </Container>
     )

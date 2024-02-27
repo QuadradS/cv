@@ -17,11 +17,11 @@ const Container = styled.div`
   margin: auto;
 `
 
-const BaseLayout = ({children}) => {
+const BaseLayout = ({children, data}) => {
     return (
         <Wrap>
             <Container>
-                <Sidebar/>
+                <Sidebar data={data}/>
                 {children}
             </Container>
         </Wrap>
