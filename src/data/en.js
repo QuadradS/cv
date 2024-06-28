@@ -192,7 +192,7 @@ const data = {
 			},
 			"pdf": {
 				"label": "Download as PDF",
-				"url": "/cv_pdf.pdf"
+				"url": "https://quadrads.github.io/cv/cv_pdf.pdf"
 			}
 		}
 	},

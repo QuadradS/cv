@@ -5,7 +5,7 @@ const Container = styled.div`
   border-radius: 6px;
   background: #fff; 
   padding: 15px 20px;
-  box-shadow: 1px 1px 7px 4px #0000001a;
+  box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 4px 1px;
   color: #544f5a;
   font-weight: 300;
 
