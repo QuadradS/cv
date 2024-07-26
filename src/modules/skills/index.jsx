@@ -7,12 +7,13 @@ const Wrap = styled.div`
 `
 
 const Skills = ({data}) => {
-    return (
-        <Wrap>
-            <SkillsSection data={data.skills.backend} title={'SKILLS'}/>
-            <SkillsSection data={data.skills.frontend}/>
-        </Wrap>
-    )
+  return (
+    <Wrap>
+      {Object.values(data.skills).map((s, i) => (
+        <SkillsSection data={s} title={i === 0 && 'SKILLS'}/>
+      ))}
+    </Wrap>
+  )
 }
 
 export default Skills;

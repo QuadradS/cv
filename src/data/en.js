@@ -1,76 +1,79 @@
 const data = {
 	"errors":{
-		"notJs":"Seriously, have you turned off JavaScript? :)"
+		"notJs": "Seriously, have you turned off JavaScript? :)"
 	},
 	"aboutMe": {
 		"sectiontitle": "About Me",
 		"tittles": [
 			"I easily find common language with the team. I love being in a development atmosphere and experienced developers Interested in full-featured development in particular Node.js interface technologies also interested in reacting to native and Electron.js and Flutter if necessary he is ready to mentor the team.\n\nAt the moment I am actively working in the blockchain area on the frontend (web3) side, I am also actively studying and developing smartcontacts on solidity in ethrereum",
-			"At the moment I am actively working as backend(node.js) developer",
+			"At the moment I am actively working as backend(node.js) developer and and am actively studying rust (currently the core library) but am ready to move into a separate specialty (web preferences)",
 			"Geographically I am now in Bishkek (Kyrgyzstan). Therefore preferred the way to conduct an interview for me will be - a video call. You can write me in advance in mail or telegram"
 		]
 	},
 	"skills": {
-		"frontend": {
-			"sectionTitle": "Front End",
+		"general": {
+			"sectionTitle": "General",
 			"titles": [
-				"I have been working as a frontend developer for about 4-5 years and at the moment I am not developing in this direction. In my experience, I was also a middle senior team lead tech lead developer. But front-end development gave me a lot of experience with JavaScript/TypeScript. My main tools are React.js and Vue.js",
-				"I have experience developing complex cross-browser responsive web applications. Using different technologies and approaches to different projects"
+				"In general, if you add up all my experience, it turns out to be about 8 years of development. I started working at the university in 2016 and to this day I work as a programmer. I have always been interested in development approaches such as SOLID KISS DRY YAGNI. I also study rust and try to study working with computer memory and low-level development in my free time. I have experience with basic tools for tracking code review tasks and development planning.",
+			],
+			"tags": {
+				"title": "list of technologies with which I am:",
+				"list": [
+					{
+						"label": "Git"
+					},
+					{
+						"label": "Linear"
+					},
+					{
+						"label": "GitLab"
+					},
+					{
+						"label": "GitHub"
+					},
+					{
+						"label": "ClickHouse"
+					},
+					{
+						"label": "Google Meet"
+					},
+					{
+						"label": "Slack"
+					},
+					{
+						"label": "Zoom"
+					},
+					{
+						"label": "Discord"
+					}
+				]
+			}
+		},
+		"rust": {
+			"sectionTitle": "Rust",
+			"titles": [
+				"I actively study and practice rust, in the future I plan to completely switch to development in rust",
+				"I also have experience developing in rust in solana (smart contract development)"
 			],
 			"tags": {
 				"title": "List of technologies with which I am:",
 				"list": [
 					{
-						"label": "React.js"
+						"label": "Core lib"
 					},
 					{
-						"label": "Next.js"
+						"label": "Anchor"
 					},
 					{
-						"label": "Gatsby.js"
+						"label": "Actix-Web"
 					},
 					{
-						"label": "Redux"
-					},
-					{
-						"label": "Mobx"
-					},
-					{
-						"label": "Vue.js"
-					},
-					{
-						"label": "Vuex"
-					},
-					{
-						"label": "Nuxt.js"
-					},
-					{
-						"label": "Zustand"
-					},
-					{
-						"label": "CSS"
-					},
-					{
-						"label": "Styled Components"
-					},
-					{
-						"label": "CSSinJS"
-					},
-					{
-						"label": "JSS"
-					},
-					{
-						"label": "JQuery"
-					},
-					{
-						"label": "REST api"
-					},
-					{
-						"label": "Apollo GraphQL"
+						"label": "Rust Solana"
 					}
 				]
 			}
 		},
+
 		"backend": {
 			"sectionTitle": "Back End",
 			"titles": [
@@ -135,44 +138,66 @@ const data = {
 				]
 			}
 		},
-		"general": {
+		"frontend": {
+			"sectionTitle": "Front End",
 			"titles": [
-				"In general, if you add up all my experience, it turns out to be about 7 years of development. I started working at the university in 2016 and to this day I work as a programmer. I have always been interested in development approaches such as SOLID KISS DRY YAGNI. I also study rust and try to study working with computer memory and low-level development in my free time. I have experience with basic tools for tracking code review tasks and development planning.",
+				"I have been working as a frontend developer for about 4-5 years and at the moment I am not developing in this direction. In my experience, I was also a middle senior team lead tech lead developer. But front-end development gave me a lot of experience with JavaScript/TypeScript. My main tools are React.js and Vue.js",
+				"I have experience developing complex cross-browser responsive web applications. Using different technologies and approaches to different projects"
 			],
 			"tags": {
-				"title": "list of technologies with which I am:",
+				"title": "List of technologies with which I am:",
 				"list": [
 					{
-						"label": "Git"
+						"label": "React.js"
 					},
 					{
-						"label": "Linear"
+						"label": "Next.js"
 					},
 					{
-						"label": "GitLab"
+						"label": "Gatsby.js"
 					},
 					{
-						"label": "GitHub"
+						"label": "Redux"
 					},
 					{
-						"label": "ClickHouse"
+						"label": "Mobx"
 					},
 					{
-						"label": "Google Meet"
+						"label": "Vue.js"
 					},
 					{
-						"label": "Slack"
+						"label": "Vuex"
 					},
 					{
-						"label": "Zoom"
+						"label": "Nuxt.js"
 					},
 					{
-						"label": "Discord"
+						"label": "Zustand"
+					},
+					{
+						"label": "CSS"
+					},
+					{
+						"label": "Styled Components"
+					},
+					{
+						"label": "CSSinJS"
+					},
+					{
+						"label": "JSS"
+					},
+					{
+						"label": "JQuery"
+					},
+					{
+						"label": "REST api"
+					},
+					{
+						"label": "Apollo GraphQL"
 					}
 				]
 			}
-		}
-
+		},
 	},
 	"contacts": {
 		"name": "danil sitdikov",

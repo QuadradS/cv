@@ -25,7 +25,7 @@ const Experience = ({data}) => {
                         </h5>
                     </p>
 
-                    <p>Here i work{d.isCurrentJob ? '' : 'ed'} as: <Position>{d.position}</Position></p>
+                    <p>Position: {d.isCurrentJob ? '' : 'ed'} as: <Position>{d.position}</Position></p>
 
                     {d.titles.map((t) => (
                         <p>{t}</p>
