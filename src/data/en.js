@@ -232,7 +232,7 @@ const data = {
 				"isCurrentJob": true,
 				"position": "Rust Solana Developer",
 				"titles": [
-					"Here I will work as a solana developer on rust and my main task is to work with dex (moonshot and pumpfun) to obtain state, calculate the favorable price of tokens and the possibility of swapping tokens",
+					"Here I work as a solana developer on rust and my main task is to work with dex (moonshot and pumpfun) to obtain state, calculate the favorable price of tokens and the possibility of swapping tokens",
 					"Development of back end parts on actix web. Interaction with solana smart contracts"	
 				],
 				"tags": {
