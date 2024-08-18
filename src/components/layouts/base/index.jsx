@@ -15,6 +15,10 @@ const Container = styled.div`
   align-content: flex-start;
   max-width: 1440px;
   margin: auto;
+
+  @media(max-width: 1000px) {
+    flex-wrap: wrap;
+  }
 `
 
 const BaseLayout = ({children, data}) => {

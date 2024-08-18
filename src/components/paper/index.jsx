@@ -12,6 +12,12 @@ const Container = styled.div`
   & > p {
     margin-bottom: 20px;
   }
+
+  @media(max-width: 1000px) {
+      & > p {
+          line-height: 22px;
+      }
+    }
 `
 
 const Paper = ({ children }) => {

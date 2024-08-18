@@ -6,7 +6,7 @@ const data = {
 		"sectiontitle": "About Me",
 		"tittles": [
 			"I easily find common language with the team. I love being in a development atmosphere and experienced developers Interested in full-featured development in particular Node.js interface technologies also interested in reacting to native and Electron.js and Flutter if necessary he is ready to mentor the team.\n\nAt the moment I am actively working in the blockchain area on the frontend (web3) side, I am also actively studying and developing smartcontacts on solidity in ethrereum",
-			"At the moment I am actively working as backend(node.js) developer and and am actively studying rust (currently the core library) but am ready to move into a separate specialty (web preferences)",
+			"At the moment I am actively working as a blockchain developer on rust and also working as a backend developer on rust",
 			"Geographically I am now in Bishkek (Kyrgyzstan). Therefore preferred the way to conduct an interview for me will be - a video call. You can write me in advance in mail or telegram"
 		]
 	},
@@ -52,8 +52,7 @@ const data = {
 		"rust": {
 			"sectionTitle": "Rust",
 			"titles": [
-				"I actively study and practice rust, in the future I plan to completely switch to development in rust",
-				"I also have experience developing in rust in solana (smart contract development)"
+				"After 6 years of developing in java script, I successfully switched to rust development. At this moment I have more than 1.5 years of experience as a blockchain developer",
 			],
 			"tags": {
 				"title": "List of technologies with which I am:",
@@ -69,6 +68,9 @@ const data = {
 					},
 					{
 						"label": "Rust Solana"
+					},
+					{
+						"label": "Solana sdk"
 					}
 				]
 			}
@@ -225,9 +227,29 @@ const data = {
 		"sectionTitle": "EXPERIENCE",
 		"list": [
 			{
-				"companyName": "frakt.xyz",
-				"date": "MAY 2023 - Current job",
+				"companyName": "Solana devs",
+				"date": "AUGUST 2024 - Current job",
 				"isCurrentJob": true,
+				"position": "Rust Solana Developer",
+				"titles": [
+					"Here I will work as a solana developer on rust and my main task is to work with dex (moonshot and pumpfun) to obtain state, calculate the favorable price of tokens and the possibility of swapping tokens",
+					"Development of back end parts on actix web. Interaction with solana smart contracts"	
+				],
+				"tags": {
+					"title": "List of technologies with which I am:",
+					"list": [
+						"Splana SDK",
+						"Cargo",
+						"SPL token",
+						"Actix web",
+						"Rust"
+					]
+				}
+			},
+			{
+				"companyName": "frakt.xyz",
+				"date": "MAY 2023 - AUGUST 2024",
+				"isCurrentJob": false,
 				"link": "https://banx.gg/",
 				"position": "JavaScript / Rust Solana Developer",
 				"titles": [

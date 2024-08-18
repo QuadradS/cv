@@ -11,8 +11,8 @@ function App({data}) {
     return (
         <Container>
             <AboutMe data={data}/>
-            <Skills data={data}/>
             <Experience data={data}/>
+            <Skills data={data}/>
         </Container>
     );
 }

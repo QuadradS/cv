@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from "../../components/section";
-import {List, Tag} from "../../components/tag";
+import { List, Tag } from "../../components/tag";
 import styled from "styled-components";
 
 const Position = styled.span`
@@ -10,12 +10,11 @@ const Wrap = styled.div`
     margin-top: 40px;
 `
 
-const Experience = ({data}) => {
+const Experience = ({ data }) => {
     const experience = data.experience;
 
     return (
         <Wrap>
-
             {experience.list.map((d, i) => (
                 <Section blockTitle={i === 0 && experience.sectionTitle} title={d.companyName} key={d.date}>
 
@@ -25,7 +24,7 @@ const Experience = ({data}) => {
                         </h5>
                     </p>
 
-                    <p>Position: {d.isCurrentJob ? '' : 'ed'} as: <Position>{d.position}</Position></p>
+                    <p>Position: <Position>{d.position}</Position></p>
 
                     {d.titles.map((t) => (
                         <p>{t}</p>
@@ -33,7 +32,7 @@ const Experience = ({data}) => {
 
                     <p>{d.tags.title}</p>
                     <List>{d.tags.list.map((t) => (
-                        <Tag label={t}/>
+                        <Tag label={t} />
                     ))}</List>
                 </Section>
             ))}

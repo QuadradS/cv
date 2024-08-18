@@ -7,6 +7,12 @@ import {ReactComponent as PdfIcon} from "../icons/pdf.svg";
 import path from './me.jpeg'
 const Container = styled.div`
   width: 260px;
+  @media(max-width: 1000px) {
+    // max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+  }
 `
 
 const Title = styled.p`
@@ -21,6 +27,10 @@ const Title = styled.p`
   background: transparent;
   text-align: center;
   line-height: 25px;
+  
+  @media(max-width: 1000px) {
+        margin: auto;
+    }
 
   //&:before {
   //  display: block;
@@ -67,6 +77,10 @@ const Item = styled.a`
     &:hover {
         background: ${({selected}) => !selected && '#eeeef5'};
     }
+
+    @media(max-width: 1000px) {
+        justify-content: center;
+    }
 `
 
 const Avatar = styled.img`
@@ -74,7 +88,14 @@ const Avatar = styled.img`
   width: 200px;
   margin: 20px;
   border-radius: 6px;
-  box-shadow: 0 4px 5px -2px #000
+  box-shadow: 0 4px 5px -2px #000;
+    @media(max-width: 1000px) {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 `
 
 const Sidebar = ({data}) => {
