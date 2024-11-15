@@ -211,7 +211,7 @@ const data = {
 			},
 			"gmail": {
 				"label": "Gmail",
-				"url": "quadrad@gmail.com"
+				"url": "quadrad4@gmail.com"
 			},
 			"github": {
 				"label": "GitHub",
@@ -233,7 +233,7 @@ const data = {
 				"position": "Rust Solana Developer",
 				"titles": [
 					"Here I work as a solana developer on rust and my main task is to work with dex (moonshot and pumpfun) to obtain state, calculate the favorable price of tokens and the possibility of swapping tokens",
-					"Development of back end parts on actix web. Interaction with solana smart contracts"	
+					"Development of back end parts on actix web. Interaction with solana smart contracts"
 				],
 				"tags": {
 					"title": "List of technologies with which I am:",
