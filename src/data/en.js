@@ -238,7 +238,7 @@ const data = {
 				"tags": {
 					"title": "List of technologies with which I am:",
 					"list": [
-						"Splana SDK",
+						"Solana SDK",
 						"Cargo",
 						"SPL token",
 						"Actix web",
