@@ -207,7 +207,7 @@ const data = {
 		"social": {
 			"telegram": {
 				"label": "Telegram",
-				"url": "https://t.me/Quadrad_s"
+				"url": "https://t.me/QuadradS"
 			},
 			"gmail": {
 				"label": "Gmail",
@@ -227,7 +227,7 @@ const data = {
 		"sectionTitle": "EXPERIENCE",
 		"list": [
 			{
-				"companyName": "Solana devs",
+				"companyName": "Profiterole",
 				"date": "AUGUST 2024 - Current job",
 				"isCurrentJob": true,
 				"position": "Rust Solana Developer",
