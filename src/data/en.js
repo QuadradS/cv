@@ -5,57 +5,24 @@ const data = {
 	"aboutMe": {
 		"sectiontitle": "About Me",
 		"tittles": [
-			"I easily find common language with the team. I love being in a development atmosphere and experienced developers Interested in full-featured development in particular Node.js interface technologies also interested in reacting to native and Electron.js and Flutter if necessary he is ready to mentor the team.\n\nAt the moment I am actively working in the blockchain area on the frontend (web3) side, I am also actively studying and developing smartcontacts on solidity in ethrereum",
-			"At the moment I am actively working as a blockchain developer on rust and also working as a backend developer on rust",
-			"Geographically I am now in Bishkek (Kyrgyzstan). Therefore preferred the way to conduct an interview for me will be - a video call. You can write me in advance in mail or telegram"
+			"I am based in Bishkek, Kyrgyzstan.",
+			"I have strong experience in both Frontend and Backend development using Node.js, having worked on a wide range of full-stack projects over the past several years. My background includes building scalable APIs, real-time systems, and complex user interfaces with modern JavaScript and TypeScript frameworks.",
+			"In addition, I have hands-on experience working with Rust in the Solana blockchain ecosystem, where I developed smart contracts and integrated them with backend and frontend applications.",
+			"Currently, I’m actively focusing on transitioning into Rust backend development, expanding my expertise in building high-performance, type-safe, and reliable backend systems using modern Rust frameworks and tools.",
+			"On a personal level, I’m a communicative and non-confrontational person who enjoys working in a team environment and contributing to a positive and productive atmosphere."
 		]
 	},
 	"skills": {
-		"general": {
-			"sectionTitle": "General",
-			"titles": [
-				"In general, if you add up all my experience, it turns out to be about 8 years of development. I started working at the university in 2016 and to this day I work as a programmer. I have always been interested in development approaches such as SOLID KISS DRY YAGNI. I also study rust and try to study working with computer memory and low-level development in my free time. I have experience with basic tools for tracking code review tasks and development planning.",
-			],
-			"tags": {
-				"title": "list of technologies with which I am:",
-				"list": [
-					{
-						"label": "Git"
-					},
-					{
-						"label": "Linear"
-					},
-					{
-						"label": "GitLab"
-					},
-					{
-						"label": "GitHub"
-					},
-					{
-						"label": "ClickHouse"
-					},
-					{
-						"label": "Google Meet"
-					},
-					{
-						"label": "Slack"
-					},
-					{
-						"label": "Zoom"
-					},
-					{
-						"label": "Discord"
-					}
-				]
-			}
-		},
 		"rust": {
 			"sectionTitle": "Rust",
 			"titles": [
-				"After 6 years of developing in java script, I successfully switched to rust development. At this moment I have more than 1.5 years of experience as a blockchain developer",
+				"After 6 years of experience with JavaScript, I made a successful transition to Rust development. This shift allowed me to dive deeper into systems programming and blockchain technologies, with a particular focus on the Solana ecosystem.",
+				"Through building smart contracts (programs) and integrating them with frontend and backend systems, I’ve gained hands-on experience in creating efficient and secure on-chain logic. I also work extensively with Solana web3.js for frontend-to-chain communication.",
+				"In parallel, I’m actively growing as a backend developer using Rust, focusing on building scalable APIs and blockchain-integrated services. My experience includes working with Actix Web, Diesel ORM, and writing robust server-side applications with Rust’s strong type system and performance advantages.",
+				"My background in full-stack JavaScript development has given me the flexibility to understand the entire flow—from UI to smart contracts—while Rust has opened up a powerful new layer of performance and safety in my development approach."
 			],
 			"tags": {
-				"title": "List of technologies with which I am:",
+				"title": "List of technologies I work with: ",
 				"list": [
 					{
 						"label": "Core lib"
@@ -79,12 +46,12 @@ const data = {
 		"backend": {
 			"sectionTitle": "Back End",
 			"titles": [
-				"At the moment, my active direction of development as a developer is back end development. I am actively studying and developing backend projects on node.js. I am actively studying microservice architecture. In total, my experience working on the backend is about 3 years",
-				"I also love devops technologies (docker, jenkins, kubernetes and ci/cd)",
-				"Lately I've been using nest.js most often. But I also have experience working with express.js and koa.js in real projects."
+				"I’m actively deepening my expertise in building backend systems using Node.js, with a strong interest in microservice architecture. Over the past 3 years, I’ve gained solid hands-on experience working on backend projects, and I continue to grow in this area by building scalable, maintainable services.",
+				"Recently, I’ve been working primarily with Nest.js, but I also have real-world experience using Express.js and Koa.js in production environments. I’m passionate about building reliable APIs, efficient data models, and well-structured services.",
+				"In addition to backend development, I have a strong interest in DevOps technologies. I enjoy working with tools such as Docker, Jenkins, Kubernetes, and setting up CI/CD pipelines to streamline development and deployment processes."
 			],
 			"tags": {
-				"title": "list of technologies with which I am:",
+				"title": "List of technologies I work with: ",
 				"list": [
 					{
 						"label": "Nest.js"
@@ -141,13 +108,14 @@ const data = {
 			}
 		},
 		"frontend": {
-			"sectionTitle": "Front End",
+			"sectionTitle": "Back End",
 			"titles": [
-				"I have been working as a frontend developer for about 4-5 years and at the moment I am not developing in this direction. In my experience, I was also a middle senior team lead tech lead developer. But front-end development gave me a lot of experience with JavaScript/TypeScript. My main tools are React.js and Vue.js",
-				"I have experience developing complex cross-browser responsive web applications. Using different technologies and approaches to different projects"
+				"I have around 3-4 years of experience working as a frontend developer, during which I held roles ranging from middle to senior, and even took on responsibilities as a team lead and tech lead. While frontend is no longer my main focus, it played a major role in shaping my expertise in JavaScript and TypeScript, which continues to benefit me in backend and full-stack development.",
+				"I’ve built complex, responsive, and cross-browser web applications, using modern frameworks and a variety of architectural patterns depending on the needs of each project.",
+				"My primary tools were React.js and Vue.js, along with associated state management libraries and build tools."
 			],
 			"tags": {
-				"title": "List of technologies with which I am:",
+				"title": "List of technologies I work with: ",
 				"list": [
 					{
 						"label": "React.js"
@@ -227,21 +195,21 @@ const data = {
 		"sectionTitle": "EXPERIENCE",
 		"list": [
 			{
-				"companyName": "Profiterole",
+				"companyName": "BullPerks",
 				"date": "AUGUST 2024 - Current job",
 				"isCurrentJob": true,
 				"position": "Rust Solana Developer",
 				"titles": [
-					"Here I work as a solana developer on rust and my main task is to work with dex (moonshot and pumpfun) to obtain state, calculate the favorable price of tokens and the possibility of swapping tokens",
-					"Development of back end parts on actix web. Interaction with solana smart contracts"
+					"I work at Bullperks as a Solana smart contract developer, focusing on building and maintaining programs written in Rust using the Solana SDK and Anchor framework. My responsibilities included developing on-chain logic, writing tests, and deploying smart contracts",
+					"In addition to smart contract development, I also maintained the Node.js backend, ensuring smooth integration between the blockchain layer and the server-side infrastructure. I handled various backend tasks such as wallet interactions, transaction processing, and data synchronization with the blockchain"
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
 						"Solana SDK",
 						"Cargo",
 						"SPL token",
-						"Actix web",
+						"Node.js",
 						"Rust"
 					]
 				}
@@ -253,14 +221,12 @@ const data = {
 				"link": "https://banx.gg/",
 				"position": "JavaScript / Rust Solana Developer",
 				"titles": [
-					"Here I got a cool experience working on the Solana network. Also experience in connecting smart contracts on Solana and web applications. Worked on Optimizing and improving the ui in collaboration with smarcontract. I also connected the ui part with the web api back end",
-					"Also here I gained experience working on a backend node with BRC2/ORC20 in the Bitcoin network",
-					"I often encountered problems of optimizing renders at the frontend and validating data before sending it to a smart contract"
+					"I worked at Frakt, initially joining the team as a Node.js developer. Over time, I began receiving tasks related to Rust and Solana, which allowed me to dive deeper into blockchain development. This hands-on experience helped me build a solid foundation in Solana smart contract development, and I eventually became confident working with the full Web3 stack",
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
-						"Node.js", "React.js", "TypeScript", "Solana web3.js", "Zustand.js", "REST API", "Jest", "Anchor", "Rust", "Mongo"
+						"Node.js", "TypeScript", "Solana web3.js", "Jest", "Anchor", "Rust", "Mongo"
 					]
 				}
 			},
@@ -271,12 +237,11 @@ const data = {
 				"link": "https://xfamily.io/",
 				"position": "Node.js Developer",
 				"titles": [
-					"In this company I worked as a node.js backend developer on a product project for swap cryptocurrency",
-					"I worked with an API database and also maintained a large portal on the best solutions for cryptocurrency swaps",
-					"Got good experience working in web3 and interacting with smart contracts."
+					"I worked as a Node.js backend developer on a product focused on cryptocurrency swaps. My main responsibilities included building and maintaining APIs, managing database interactions, and supporting a large-scale portal that provided optimized solutions for swapping cryptocurrencies.",
+					"As part of the development team, I gained valuable experience working in the Web3 space, particularly in integrating and interacting with smart contracts. I also worked with asynchronous messaging using RabbitMQ, implemented caching and session management with Redis, and wrote tests using Jest to ensure code quality and stability.",
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
 						"Node.js", "RabbitMQ", "TypeScript", "Web3.js", "Redis", "REST API", "Jest", "Mongo"
 					]
@@ -289,12 +254,11 @@ const data = {
 				"link": false,
 				"position": "Node.js Developer",
 				"titles": [
-					"In this company I worked as a node.js developer in a startup selling NFTs",
-					"Here I got great knowledge on database design and various ways of connect with clients",
-					"I also began to understand better how to work with microservices. As well as third party services"
+					"At Ownix, I worked as a Node.js developer in a startup focused on NFT sales. My role involved developing and maintaining backend services, implementing real-time communication features, and supporting the overall infrastructure of the platform.",
+					"During my time there, I gained solid experience in database design, working primarily with PostgreSQL and Redis, and explored different ways of connecting with clients through technologies like WebSocket and Server-Sent Events (SSE). I also deepened my understanding of microservice architecture and integration with various third-party services.\n",
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
 						"Node.js", "RabbitMQ", "TypeScript", "Postgres", "Redis", "REST API", "Websocker", "SSE"
 					]
@@ -307,12 +271,11 @@ const data = {
 				"link": "https://p2p.org/",
 				"position": "Front-End Developer",
 				"titles": [
-					"In this company I worked as a Front-End Developer developer in a large products company",
-					"Front end development for company applications. Connecting to the backend.",
-					"Typical work for a front-end developer"
+					"At P2P.org, I worked as a Front-End Developer in a large product-focused company. My primary responsibilities included developing and maintaining user interfaces for internal and customer-facing applications, ensuring seamless integration with backend APIs.",
+					"I worked on building responsive and user-friendly interfaces using React.js and Vue.js, managed application state with Redux, and contributed to improving overall frontend architecture. I also collaborated closely with backend developers to ensure smooth API integration and a consistent user experience.",
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
 						"Node.js", "React.js", "TypeScript", "Vue.js", "Redux", "REST API", "Ghost.js"
 					]
@@ -325,12 +288,11 @@ const data = {
 				"link": false,
 				"position": "Front-End Developer",
 				"titles": [
-					"Development of complex SPA and backend, team development. Support for terrible Legacy code and writing a new one.",
-					"Teamwork with Back-end, Front-End, Mobily developers, PM - manager and QA. Reached for Team - Lead position.",
-					"My first experience working in an out source company. Also my first experience working on the backend on node.js"
+					"At Zensoft.io, I worked on the development of complex Single Page Applications (SPAs) and backend services as part of a cross-functional team. This was my first experience in an outsourcing company and also the beginning of my journey into backend development using Node.js.",
+					"My responsibilities included supporting and refactoring legacy code, as well as writing clean, maintainable code for new features. I collaborated closely with backend and frontend developers, mobile developers, project managers, and QA engineers. Over time, I progressed to a Team Lead role, taking on more responsibility for planning, architecture, and code reviews.",
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
 						"Node.js", "React.js", "TypeScript", "Redux", "REST API", "Jest", "Express.js", "TypeORM", "Postgres"
 					]
@@ -343,11 +305,11 @@ const data = {
 				"link": "https://svetofor.info/",
 				"position": "Front-End Developer",
 				"titles": [
-					"My first experience in office with a team. I worked with BackEnd developer",
-					"first job where I gained basic knowledge about team development"
+					"At Svetofor.info, I had my first in-office experience working as part of a development team. I collaborated closely with a backend developer and was responsible for building and maintaining frontend components of the company’s websites.\n",
+					"This role helped me gain basic knowledge of team-based development, workflows, and project structure. It laid the foundation for my future growth as a frontend developer."
 				],
 				"tags": {
-					"title": "List of technologies with which I am:",
+					"title": "List of technologies I work with: ",
 					"list": [
 						"HTML5", "CSS3", "JavaScript", "WordPress", "DOM API"
 					]
