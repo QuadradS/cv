@@ -1,5 +1,5 @@
 const data = {
-	"errors":{
+	"errors": {
 		"notJs": "Seriously, have you turned off JavaScript? :)"
 	},
 	"aboutMe": {
@@ -195,9 +195,49 @@ const data = {
 		"sectionTitle": "EXPERIENCE",
 		"list": [
 			{
+				"companyName": "Written.app",
+				"date": "AUGUST 2024 - MAY 2025",
+				"isCurrentJob": false,
+				"position": "Rust Solana Developer",
+				"titles": [
+					"I’m a Solana developer at Written, focusing on building scalable on-chain experiences with Compressed NFTs (cNFTs). My work involves designing efficient minting, storage, and verification systems using Solana’s state compression technology — making NFTs cheaper, faster, and more accessible for large-scale projects.",
+					"I’m passionate about performance, on-chain architecture, and bringing real utility to the Solana ecosystem."
+				],
+				"tags": {
+					"title": "List of technologies I work with: ",
+					"list": [
+						"Solana SDK",
+						"Cargo",
+						"Node.js",
+						"Rust",
+						"Metaplex"
+					]
+				}
+			},
+			{
+				"companyName": "ToTheMoon",
+				"date": "APRIL 2024 - NOVEMBER 2025",
+				"isCurrentJob": false,
+				"position": "Rust Solana Developer",
+				"titles": [
+					"At ToTheMoon, I developed a token launchpad on Solana — a full-stack platform for creating, managing, and distributing new SPL tokens.",
+					"My role involved designing smart contracts for fair launches, automated liquidity locking, and whitelist integrations, as well as building the front-end interface for seamless project onboarding. The goal was to give Web3 teams an efficient and transparent way to bring their tokens to market."
+				],
+				"tags": {
+					"title": "List of technologies I work with: ",
+					"list": [
+						"Solana SDK",
+						"Cargo",
+						"SPL token",
+						"Node.js",
+						"Rust"
+					]
+				}
+			},
+			{
 				"companyName": "BullPerks",
-				"date": "AUGUST 2024 - Current job",
-				"isCurrentJob": true,
+				"date": "AUGUST 2024 - APRIL 2025",
+				"isCurrentJob": false,
 				"position": "Rust Solana Developer",
 				"titles": [
 					"I work at Bullperks as a Solana smart contract developer, focusing on building and maintaining programs written in Rust using the Solana SDK and Anchor framework. My responsibilities included developing on-chain logic, writing tests, and deploying smart contracts",
