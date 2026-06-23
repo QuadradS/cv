@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.querySelector("[data-print]");t&&t.addEventListener("click",()=>window.print())})();
