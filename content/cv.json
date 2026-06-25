@@ -1,0 +1,144 @@
+{
+  "lang": "en",
+  "labels": {
+    "openToRemote": "Open to remote",
+    "summary": "Summary",
+    "skills": "Core Skills",
+    "experience": "Experience",
+    "languages": "Languages",
+    "print": "Save as PDF",
+    "altUrl": "./ru.html",
+    "altLabel": "Русский"
+  },
+  "basics": {
+    "name": "Danil Sitdikov",
+    "title": "Solana / Rust Smart Contract Developer",
+    "location": "Bishkek, Kyrgyzstan",
+    "openToRemote": true,
+    "photo": "",
+    "contacts": {
+      "telegram": {
+        "label": "t.me/QuadradS",
+        "url": "https://t.me/QuadradS"
+      },
+      "github": {
+        "label": "github.com/QuadradS",
+        "url": "https://github.com/QuadradS"
+      },
+      "email": "quadrad4@gmail.com"
+    }
+  },
+
+  "summary": "Solana and Rust developer with about 8 years in software. The last 3 years I write production smart contracts on Solana with Rust, Anchor and the Solana SDK. Before that, my main stack was Node.js and React, and I'm open to backend Node.js roles. I connect on-chain programs to Node.js backends and web3 frontends, and I care a lot about secure code: Ed25519 signature checks, replay protection, and spotting scams and malicious code before they ship. I can take a project end to end — contracts, backend and frontend.",
+
+  "skills": [
+    {
+      "group": "Blockchain",
+      "items": ["Solana", "Anchor", "SPL Token", "web3.js", "DEX integrations", "Compressed NFTs", "Metaplex", "Solidity (EVM)"]
+    },
+    {
+      "group": "Security",
+      "items": ["Ed25519 signature verification", "Replay protection", "Scam / malicious code review"]
+    },
+    {
+      "group": "Rust",
+      "items": ["Actix-Web", "Diesel", "Solana SDK"]
+    },
+    {
+      "group": "Backend",
+      "items": ["Node.js", "Nest.js", "Express.js", "PostgreSQL", "Redis", "RabbitMQ"]
+    },
+    {
+      "group": "Frontend",
+      "items": ["React", "Vue", "TypeScript"]
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Written.app",
+      "role": "Solana Developer",
+      "period": "Aug 2024 – May 2025",
+      "bullets": [
+        "Built a compressed NFT (cNFT) system on Solana state compression: minting, storage and on-chain verification.",
+        "Designed it to keep costs low when minting NFTs at large scale."
+      ]
+    },
+    {
+      "company": "ToTheMoon",
+      "role": "Solana Developer",
+      "period": "Apr 2024 – Nov 2025",
+      "bullets": [
+        "Wrote the smart contracts for a token launchpad: fair launches, automated liquidity locking, whitelists, and migration to Raydium.",
+        "Built a DEX integration SDK to trade across Raydium, Pump.fun, Moonshot, Orca and Jupiter from one interface.",
+        "Built the onboarding frontend so teams could create and launch their tokens themselves."
+      ]
+    },
+    {
+      "company": "BullPerks",
+      "role": "Solana Smart Contract Developer",
+      "period": "Aug 2024 – Apr 2025",
+      "bullets": [
+        "Wrote, tested and deployed Solana programs in Rust with the Solana SDK and Anchor.",
+        "Added Ed25519 signature verification and replay protection to keep on-chain actions safe from forged or repeated transactions.",
+        "Maintained the Node.js backend that bridges chain and server: wallet calls, transaction processing, and on-chain data sync."
+      ]
+    },
+    {
+      "company": "frakt.xyz",
+      "role": "Node.js → Rust / Solana Developer",
+      "period": "May 2023 – Aug 2024",
+      "bullets": [
+        "Started on the Node.js backend, then moved to Rust and Solana work across the full Web3 stack (Anchor, web3.js, TypeScript).",
+        "Built an on-chain betting game in Rust with reward distribution handled fully on-chain."
+      ]
+    },
+    {
+      "company": "xfamily.io",
+      "role": "Node.js Backend Developer",
+      "period": "Aug 2021 – Apr 2023",
+      "bullets": [
+        "Built the APIs and database for a large crypto-swap portal.",
+        "Used RabbitMQ for async jobs, Redis for cache, and Jest for tests; integrated with smart contracts."
+      ]
+    },
+    {
+      "company": "Ownix.com",
+      "role": "Node.js Developer",
+      "period": "Mar 2020 – Aug 2021",
+      "bullets": [
+        "Built backend services for an NFT-sales startup, with real-time features over WebSocket and SSE.",
+        "Worked with PostgreSQL, Redis, a microservice setup, and third-party integrations."
+      ]
+    },
+    {
+      "company": "P2P.org",
+      "role": "Front-End Developer",
+      "period": "Aug 2019 – Mar 2020",
+      "bullets": [
+        "Built React and Vue interfaces with Redux and backend API integration. Moved into web3 development here."
+      ]
+    },
+    {
+      "company": "Zensoft.io",
+      "role": "Front-End Developer → Team Lead",
+      "period": "Dec 2017 – Aug 2019",
+      "bullets": [
+        "Built SPAs, started Node.js backend work, and grew into a team lead role (planning, architecture, code reviews)."
+      ]
+    },
+    {
+      "company": "Svetofor.info",
+      "role": "Front-End Developer",
+      "period": "2017",
+      "bullets": [
+        "Turned designs into working website frontends — HTML/CSS markup plus JavaScript for the interactive parts. First dev job and the start of the whole path."
+      ]
+    }
+  ],
+
+  "languages": [
+    { "name": "English", "level": "Working proficiency" },
+    { "name": "Russian", "level": "Native" }
+  ]
+}

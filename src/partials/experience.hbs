@@ -1,0 +1,17 @@
+<section class="experience section">
+  <h2 class="section__title">{{labels.experience}}</h2>
+  {{#each experience}}
+    <article class="experience__item">
+      <div class="experience__head">
+        <span class="experience__company">{{company}}</span>
+        <span class="experience__period">{{period}}</span>
+      </div>
+      <p class="experience__role">{{role}}</p>
+      <ul class="experience__bullets">
+        {{#each bullets}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </article>
+  {{/each}}
+</section>

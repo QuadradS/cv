@@ -1,18 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './assets/index.css';
-import Theme from "./theme.config";
-import BaseLayout from "./components/layouts/base";
-import enData from './data/en';
+import './styles/main.scss';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <React.StrictMode>
-        <Theme>
-            <BaseLayout data={enData}>
-                <App data={enData}/>
-            </BaseLayout>
-        </Theme>
-    </React.StrictMode>
-);
+// The only client-side JS: wire up the optional "Print / Save as PDF" button.
+// Hidden in print output via CSS.
+const printButton = document.querySelector('[data-print]');
+if (printButton) {
+  printButton.addEventListener('click', () => window.print());
+}

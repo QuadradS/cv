@@ -1,0 +1,13 @@
+<section class="skills section">
+  <h2 class="section__title">{{labels.skills}}</h2>
+  {{#each skills}}
+    <div class="skills__group">
+      <h3 class="skills__group-title">{{group}}</h3>
+      <ul class="skills__list">
+        {{#each items}}
+          <li class="skills__item">{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/each}}
+</section>
