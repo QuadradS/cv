@@ -29,7 +29,7 @@
       "email": "quadrad4@gmail.com"
     }
   },
-  "summary": "Backend developer working in software since 2017. I build Node.js and TypeScript services for APIs, integrations, transaction processing and asynchronous jobs. My experience includes PostgreSQL, Redis and RabbitMQ, defining API contracts across teams and owning service integrations. Additional experience includes React, developing and testing Rust programs for Solana, and leading a small frontend team.",
+  "summary": "JavaScript developer working in software since 2017. I develop and maintain Node.js and TypeScript backends, including APIs, integrations, transaction processing and asynchronous jobs. My experience includes PostgreSQL, MongoDB, Redis and RabbitMQ, defining API contracts across teams and integrating services. On the frontend, I have built React and Vue applications, working with state management, API integrations and realtime updates. I have also led a small frontend team. Additional experience includes developing and testing Rust programs for Solana.",
   "skills": [
     {
       "group": "Core Stack",
