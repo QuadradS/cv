@@ -7,9 +7,10 @@
         <span class="experience__period">{{period}}</span>
       </div>
       <p class="experience__role">{{role}}</p>
-      <ul class="experience__bullets">
-        {{#each bullets}}
-          <li>{{this}}</li>
+      <p class="experience__description">{{description}}</p>
+      <ul class="experience__stack" aria-label="{{../labels.stack}}">
+        {{#each stack}}
+          <li class="experience__tag">{{this}}</li>
         {{/each}}
       </ul>
     </article>

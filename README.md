@@ -1,71 +1,49 @@
-# CV — data-driven static site
+# Node.js / TypeScript CV
 
-A static CV generated at build time from a single JSON file. No React, no
-runtime framework, no client-side data fetching. One source produces two
-artifacts:
+A static backend developer CV in English and Russian. Content is stored in JSON,
+rendered using Handlebars and Webpack, with print styles and PDF export.
+Rust and Solana experience is included as an additional specialisation.
 
-- **`dist/index.html`** — the website (two-column on screen, single-column
-  ATS-safe layout when printed).
-- **`dist/cv.pdf`** — an A4 PDF rendered from the same HTML with print styles.
+## Content
 
-## Edit the CV
+- `content/cv.json`: English CV → `index.html`
+- `content/cv.ru.json`: Russian CV → `ru.html`
 
-**You only ever edit [`content/cv.json`](content/cv.json).** Never touch the
-HTML. The JSON drives every section:
+Edit the content files to update the header, summary, skills, experience and
+languages. Each experience entry has a prose `description` and a `stack` array
+rendered as technology badges below it. Section templates are in `src/partials/`; screen and print styles
+are in `src/styles/main.scss`.
 
-| Section      | JSON key      | Shape |
-|--------------|---------------|-------|
-| Header       | `basics`      | `{ name, title, location, openToRemote, photo, contacts: { telegram, github, email } }` |
-| Summary      | `summary`     | string |
-| Core Skills  | `skills`      | `[{ group, items: [] }]` |
-| Projects     | `projects`    | `[{ name, description }]` (one line each, no links — NDA) |
-| Experience   | `experience`  | `[{ company, role, period, bullets: [] }]` (reverse chronological) |
-| Languages    | `languages`   | `[{ name, level }]` |
+## Development
 
-Items marked `TODO:` are placeholders — fill or remove them. The photo lives at
-`src/assets/photo.jpeg`; replace the file (keep the name) or update
-`basics.photo`.
-
-## Commands
-
-```bash
-npm install      # install dependencies (downloads Chromium for the PDF step)
-npm run dev      # live preview at http://localhost:8080
-npm run build    # build dist/index.html + dist/cv.pdf
+```sh
+npm install
+npm run dev
+npm run build:html
+npm run build:pdf
+npm run build
 ```
 
-Other scripts: `npm run build:html` (HTML only), `npm run build:pdf` (PDF only,
-expects the HTML to already exist).
+The development server opens the English CV on port 8080. The language switch
+opens the other language. PDF generation requires the HTML build first and
+uses Puppeteer's Chromium. `npm run build` generates both HTML pages and PDFs.
 
-### Previewing the print / ATS layout
+## Output
 
-In the dev server, open print preview (Cmd/Ctrl+P) or click **Save as PDF**.
-The print stylesheet collapses to a single column, hides the photo, and orders
-sections as Header → Summary → Skills → Projects → Experience → Languages.
+- `dist/index.html`: English
+- `dist/ru.html`: Russian
+- `dist/cv-en.pdf`: English PDF
+- `dist/cv-ru.pdf`: Russian PDF
+- `dist/cv.pdf`: alias of the English PDF
 
-## Structure
-
-```
-content/cv.json          all CV content (the only file you edit)
-src/
-  index.hbs              page shell, includes section partials
-  partials/*.hbs         one Handlebars partial per section
-  styles/main.scss       screen + @media print styles
-  index.js               imports styles + wires the print button
-  assets/                photo, favicon
-scripts/build-pdf.js     Puppeteer: dist/index.html -> dist/cv.pdf
-webpack.config.js        Handlebars + SCSS + HtmlWebpackPlugin
-```
+The Save as PDF button opens the browser print dialog. Print styles use a
+single column and order sections as Header → Summary → Skills → Experience →
+Languages. Photos and screen controls are hidden when printing.
 
 ## Deployment
 
-`main` holds **source only**. On every push to `main`, GitHub Actions
-(`.github/workflows/deploy.yml`) runs `npm ci`, `npm run build` (HTML + PDF),
-and deploys `dist/` to GitHub Pages via the official Pages actions.
-
-One-time setup: **Settings → Pages → Build and deployment → Source: GitHub
-Actions**.
-
-Asset paths use a relative `./` publicPath, so the site works under the project
-subpath `https://quadrads.github.io/cv/`. The PDF is published at
-`https://quadrads.github.io/cv/cv.pdf`.
+GitHub Actions builds and deploys `dist/` to GitHub Pages on pushes to `main`.
+The canonical CV is at https://quadrads.github.io/cv/ and the Russian version
+at https://quadrads.github.io/cv/ru.html. Asset paths are relative to support
+GitHub Pages project subpaths. The separate Solana and full-stack variants
+have been replaced by this single Node.js CV.

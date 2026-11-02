@@ -6,9 +6,9 @@ const puppeteer = require('puppeteer');
 
 const dist = path.resolve(__dirname, '..', 'dist');
 
-// One PDF per locale page.
+// One PDF per language.
 const pages = [
-  { html: 'index.html', pdf: 'cv.pdf' },
+  { html: 'index.html', pdf: 'cv-en.pdf' },
   { html: 'ru.html', pdf: 'cv-ru.pdf' },
 ];
 
@@ -22,7 +22,7 @@ const pages = [
     for (const { html, pdf } of pages) {
       const htmlPath = path.join(dist, html);
       if (!fs.existsSync(htmlPath)) {
-        console.error(`dist/${html} not found — run the HTML build first.`);
+        console.error(`dist/${html} not found run the HTML build first.`);
         process.exit(1);
       }
       const page = await browser.newPage();
@@ -39,6 +39,9 @@ const pages = [
       await page.close();
       console.log('PDF written to', path.join(dist, pdf));
     }
+    // Keep cv.pdf as the English default so the canonical /cv/cv.pdf link works.
+    fs.copyFileSync(path.join(dist, 'cv-en.pdf'), path.join(dist, 'cv.pdf'));
+    console.log('PDF written to', path.join(dist, 'cv.pdf'), '(alias of cv-en.pdf)');
   } finally {
     await browser.close();
   }

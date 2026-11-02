@@ -3,10 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-// One content file per locale → one HTML page each.
-const locales = [
-  { data: require('./content/cv.json'), filename: 'index.html' }, // en (default)
-  { data: require('./content/cv.ru.json'), filename: 'ru.html' }, // ru
+// One Node.js CV in two languages.
+const pages = [
+  { data: require('./content/cv.json'), filename: 'index.html' },
+  { data: require('./content/cv.ru.json'), filename: 'ru.html' },
 ];
 
 module.exports = (env, argv) => {
@@ -18,8 +18,10 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, 'dist'),
       filename: 'assets/[name].js',
       // Relative publicPath so the site works under a GitHub Pages project
-      // subpath (e.g. https://quadrads.github.io/cv/).
-      publicPath: './',
+      // subpath (e.g. https://quadrads.github.io/cv/). The dev server needs an
+      // absolute one, otherwise dev-middleware can't map requests to the
+      // in-memory build and falls back to stale files on disk.
+      publicPath: isProd ? './' : '/',
       clean: true,
     },
     module: {
@@ -43,9 +45,9 @@ module.exports = (env, argv) => {
       ],
     },
     plugins: [
-      // One HtmlWebpackPlugin per locale; the locale's content object is
+      // One HtmlWebpackPlugin per page; the page's content object is
       // exposed to the template at build time.
-      ...locales.map(
+      ...pages.map(
         ({ data, filename }) =>
           new HtmlWebpackPlugin({
             template: './src/index.hbs',
@@ -64,9 +66,12 @@ module.exports = (env, argv) => {
       }),
     ],
     devServer: {
-      static: path.resolve(__dirname, 'dist'),
+      // No static dir: everything (pages, css, fonts, photo) comes from the
+      // in-memory build, so a stale dist/ can never shadow it.
+      static: false,
       port: 8080,
-      open: true,
+      // Open the English CV.
+      open: ['/' + pages[0].filename],
       hot: true,
       watchFiles: ['src/**/*', 'content/**/*'],
     },

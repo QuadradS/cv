@@ -8,11 +8,12 @@
     "languages": "Языки",
     "print": "Скачать PDF",
     "altUrl": "./index.html",
-    "altLabel": "English"
+    "altLabel": "English",
+    "stack": "Стек"
   },
   "basics": {
     "name": "Данил Ситдиков",
-    "title": "Разработчик смарт-контрактов Solana / Rust",
+    "title": "Backend-разработчик · Node.js / TypeScript",
     "location": "Бишкек, Кыргызстан",
     "openToRemote": true,
     "photo": "",
@@ -28,117 +29,159 @@
       "email": "quadrad4@gmail.com"
     }
   },
-
-  "summary": "Разработчик на Solana и Rust, около 8 лет в разработке. Последние 3 года пишу продакшн смарт-контракты на Solana с Rust, Anchor и Solana SDK. До этого мой основной стек — Node.js и React, и я открыт к backend-ролям на Node.js. Связываю on-chain программы с Node.js-бэкендами и web3-фронтендами и большое внимание уделяю безопасности кода: проверка подписей Ed25519, защита от replay-атак, выявление скама и вредоносного кода до релиза. Могу вести проект целиком — контракты, бэкенд и фронтенд.",
-
+  "summary": "Backend-разработчик с опытом в разработке с 2017 года. Создаю сервисы на Node.js и TypeScript: API, интеграции, обработку транзакций и асинхронных задач. Работал с PostgreSQL, Redis и RabbitMQ, согласовывал API между командами и отвечал за интеграцию сервисов. Дополнительный опыт — React, разработка и тестирование программ на Rust для Solana, руководство небольшой frontend-командой.",
   "skills": [
     {
-      "group": "Блокчейн",
-      "items": ["Solana", "Anchor", "SPL Token", "web3.js", "Интеграции с DEX", "Compressed NFT", "Metaplex", "Solidity (EVM)"]
+      "group": "Основной стек",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "NestJS",
+        "Express",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ"
+      ]
     },
     {
-      "group": "Безопасность",
-      "items": ["Проверка подписей Ed25519", "Защита от replay-атак", "Аудит скам/вредоносного кода"]
-    },
-    {
-      "group": "Rust",
-      "items": ["Actix-Web", "Diesel", "Solana SDK"]
-    },
-    {
-      "group": "Бэкенд",
-      "items": ["Node.js", "Nest.js", "Express.js", "PostgreSQL", "Redis", "RabbitMQ"]
-    },
-    {
-      "group": "Фронтенд",
-      "items": ["React", "Vue", "TypeScript"]
+      "group": "Дополнительно",
+      "items": [
+        "React",
+        "Rust",
+        "Solana"
+      ]
     }
   ],
-
   "experience": [
     {
       "company": "Written.app",
-      "role": "Solana-разработчик",
-      "period": "авг 2024 – май 2025",
-      "bullets": [
-        "Сделал систему compressed NFT (cNFT) на Solana state compression: минт, хранение и проверка on-chain.",
-        "Спроектировал так, чтобы держать низкую стоимость при массовом минте NFT."
+      "role": "Node.js / Web3 разработчик",
+      "period": "ноя 2025 – работаю",
+      "description": "Разрабатываю и поддерживаю Node.js-сервис, который связывает основной бэкенд продукта на Ruby с Solana через HTTP API. Бэкенд подготавливает транзакции, отслеживает их выполнение и подтверждение, записывает и сохраняет состояние и статусы платежей в PostgreSQL с использованием Prisma. Реализую подготовку, проверку и создание аккаунтов в Solana. Совместно с Ruby-командой работаю над контрактом API, повторными запросами и обработкой ошибок. Сервис также поддерживает выпуск и проверку compressed NFT.",
+      "stack": [
+        "Node.js",
+        "NestJS",
+        "Jest",
+        "Mocha",
+        "web3.js",
+        "PostgreSQL",
+        "Prisma"
       ]
     },
     {
       "company": "ToTheMoon",
-      "role": "Solana-разработчик",
-      "period": "апр 2024 – ноя 2025",
-      "bullets": [
-        "Написал смарт-контракты для токен-лаунчпада: честные запуски, автоматическая блокировка ликвидности, вайтлисты и миграция на Raydium.",
-        "Сделал SDK для интеграции с DEX: торговля через Raydium, Pump.fun, Moonshot, Orca и Jupiter из одного интерфейса.",
-        "Сделал фронтенд онбординга, чтобы команды могли сами создавать и запускать свои токены."
+      "role": "Full-stack / Solana разработчик",
+      "period": "апр 2025 – ноя 2025",
+      "description": "Работал над Node.js-бэкендом платформы для запуска токенов и стриминга. Занимался WebRTC-функциональностью на базе Janus, интеграциями с Twitch и YouTube и обменом данными с клиентом через WebSocket. Проектировал структуру реляционных баз данных PostgreSQL, работал с Prisma и Redis. Также разработал TypeScript SDK с общим интерфейсом для Raydium, Pump.fun, Moonshot, Orca и Jupiter, интерфейс онбординга для запуска токенов и смарт-контракты на Rust для запусков, блокировки ликвидности, вайтлистов и миграции на Raydium.",
+      "stack": [
+        "Node.js",
+        "NestJS",
+        "Jest",
+        "Mocha",
+        "web3.js",
+        "PostgreSQL",
+        "Prisma",
+        "WebSocket",
+        "Redis",
+        "WebRTC",
+        "Janus"
       ]
     },
     {
       "company": "BullPerks",
-      "role": "Разработчик смарт-контрактов Solana",
+      "role": "Node.js / Solana разработчик",
       "period": "авг 2024 – апр 2025",
-      "bullets": [
-        "Писал, тестировал и деплоил программы Solana на Rust с Solana SDK и Anchor.",
-        "Добавил проверку подписей Ed25519 и защиту от replay-атак, чтобы on-chain действия были защищены от поддельных и повторных транзакций.",
-        "Поддерживал Node.js-бэкенд, связывающий блокчейн и сервер: вызовы кошелька, обработка транзакций и синхронизация on-chain данных."
+      "description": "Разрабатывал и поддерживал Node.js-бэкенд в микросервисной архитектуре для интеграции продукта с Solana: взаимодействие с кошельками, обработку транзакций и синхронизацию on-chain данных. Работал с базой данных MongoDB через Mongoose и с Redis. Также разрабатывал и тестировал Rust-программы для этих сценариев, реализовывал проверку подписей и защиту от повторного выполнения on-chain действий.",
+      "stack": [
+        "Node.js",
+        "MongoDB",
+        "Mongoose",
+        "Redis",
+        "Rust",
+        "Solana"
       ]
     },
     {
       "company": "frakt.xyz",
-      "role": "Node.js → Rust / Solana разработчик",
+      "role": "Node.js разработчик → Full-stack Web3",
       "period": "май 2023 – авг 2024",
-      "bullets": [
-        "Начал с Node.js-бэкенда, затем перешёл к работе с Rust и Solana по всему Web3-стеку (Anchor, web3.js, TypeScript).",
-        "Сделал on-chain игру-ставки на Rust с распределением наград полностью on-chain."
+      "description": "Работал над Node.js-бэкендом React-приложения: разрабатывал GraphQL API и BFF-интеграцию с основным бэкендом. В зону ответственности также входили React-клиент и тесты для Solana-программ.",
+      "stack": [
+        "Node.js",
+        "GraphQL",
+        "React",
+        "Solana"
       ]
     },
     {
       "company": "xfamily.io",
       "role": "Node.js backend-разработчик",
       "period": "авг 2021 – апр 2023",
-      "bullets": [
-        "Сделал API и базу данных для крупного портала крипто-свопов.",
-        "Использовал RabbitMQ для асинхронных задач, Redis для кэша и Jest для тестов; интегрировал со смарт-контрактами."
+      "description": "Разрабатывал бэкенд портала криптообменов: API, интеграции с внешними биржевыми сервисами и смарт-контрактами. Проектировал структуру реляционной базы данных PostgreSQL. Использовал RabbitMQ для асинхронной обработки задач и Redis для кэширования, писал тесты сервисов на Jest.",
+      "stack": [
+        "Node.js",
+        "PostgreSQL",
+        "RabbitMQ",
+        "Redis",
+        "Jest"
       ]
     },
     {
       "company": "Ownix.com",
       "role": "Node.js разработчик",
       "period": "мар 2020 – авг 2021",
-      "bullets": [
-        "Делал backend-сервисы для стартапа по продаже NFT, с realtime через WebSocket и SSE.",
-        "Работал с PostgreSQL, Redis, микросервисной архитектурой и сторонними интеграциями."
+      "description": "Разрабатывал Node.js-сервисы для NFT-аукциона в микросервисной архитектуре. Работал с реляционной базой данных PostgreSQL, кэшированием на Redis и сторонними интеграциями. Реализовывал обновление ставок в реальном времени через WebSocket и SSE.",
+      "stack": [
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "WebSocket",
+        "SSE"
       ]
     },
     {
       "company": "P2P.org",
       "role": "Frontend-разработчик",
       "period": "авг 2019 – мар 2020",
-      "bullets": [
-        "Делал интерфейсы на React и Vue с Redux и интеграцией с backend API. Здесь перешёл в web3-разработку."
+      "description": "Разрабатывал интерфейсы на React и Vue, работал с состоянием приложения через Redux и интегрировал фронтенд с backend API.",
+      "stack": [
+        "React",
+        "Vue",
+        "Redux"
       ]
     },
     {
       "company": "Zensoft.io",
       "role": "Frontend-разработчик → Team Lead",
       "period": "дек 2017 – авг 2019",
-      "bullets": [
-        "Делал SPA, начал работать с Node.js-бэкендом и вырос до тимлида (планирование, архитектура, код-ревью)."
+      "description": "Разрабатывал SPA и начал работать над функциональностью бэкенда на Node.js. Позже возглавил небольшую frontend-команду: отвечал за планирование, архитектурные решения и код-ревью.",
+      "stack": [
+        "JavaScript",
+        "Node.js",
+        "SPA"
       ]
     },
     {
       "company": "Svetofor.info",
       "role": "Frontend-разработчик",
       "period": "2017",
-      "bullets": [
-        "Превращал дизайны в рабочие фронтенды сайтов — вёрстка HTML/CSS плюс JavaScript для интерактива. Первая работа в разработке и начало всего пути."
+      "description": "Разрабатывал интерфейсы сайтов по макетам: вёрстку и интерактивную функциональность на HTML, CSS и JavaScript.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
       ]
     }
   ],
-
   "languages": [
-    { "name": "Английский", "level": "рабочий уровень" },
-    { "name": "Русский", "level": "родной" }
+    {
+      "name": "Английский",
+      "level": "рабочий уровень"
+    },
+    {
+      "name": "Русский",
+      "level": "родной"
+    }
   ]
 }

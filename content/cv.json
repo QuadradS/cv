@@ -8,11 +8,12 @@
     "languages": "Languages",
     "print": "Save as PDF",
     "altUrl": "./ru.html",
-    "altLabel": "Русский"
+    "altLabel": "Русский",
+    "stack": "Stack"
   },
   "basics": {
     "name": "Danil Sitdikov",
-    "title": "Solana / Rust Smart Contract Developer",
+    "title": "Backend Developer · Node.js / TypeScript",
     "location": "Bishkek, Kyrgyzstan",
     "openToRemote": true,
     "photo": "",
@@ -28,117 +29,159 @@
       "email": "quadrad4@gmail.com"
     }
   },
-
-  "summary": "Solana and Rust developer with about 8 years in software. The last 3 years I write production smart contracts on Solana with Rust, Anchor and the Solana SDK. Before that, my main stack was Node.js and React, and I'm open to backend Node.js roles. I connect on-chain programs to Node.js backends and web3 frontends, and I care a lot about secure code: Ed25519 signature checks, replay protection, and spotting scams and malicious code before they ship. I can take a project end to end — contracts, backend and frontend.",
-
+  "summary": "Backend developer working in software since 2017. I build Node.js and TypeScript services for APIs, integrations, transaction processing and asynchronous jobs. My experience includes PostgreSQL, Redis and RabbitMQ, defining API contracts across teams and owning service integrations. Additional experience includes React, developing and testing Rust programs for Solana, and leading a small frontend team.",
   "skills": [
     {
-      "group": "Blockchain",
-      "items": ["Solana", "Anchor", "SPL Token", "web3.js", "DEX integrations", "Compressed NFTs", "Metaplex", "Solidity (EVM)"]
+      "group": "Core Stack",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "NestJS",
+        "Express",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ"
+      ]
     },
     {
-      "group": "Security",
-      "items": ["Ed25519 signature verification", "Replay protection", "Scam / malicious code review"]
-    },
-    {
-      "group": "Rust",
-      "items": ["Actix-Web", "Diesel", "Solana SDK"]
-    },
-    {
-      "group": "Backend",
-      "items": ["Node.js", "Nest.js", "Express.js", "PostgreSQL", "Redis", "RabbitMQ"]
-    },
-    {
-      "group": "Frontend",
-      "items": ["React", "Vue", "TypeScript"]
+      "group": "Additional",
+      "items": [
+        "React",
+        "Rust",
+        "Solana"
+      ]
     }
   ],
-
   "experience": [
     {
       "company": "Written.app",
-      "role": "Solana Developer",
-      "period": "Aug 2024 – May 2025",
-      "bullets": [
-        "Built a compressed NFT (cNFT) system on Solana state compression: minting, storage and on-chain verification.",
-        "Designed it to keep costs low when minting NFTs at large scale."
+      "role": "Node.js / Web3 Developer",
+      "period": "Nov 2025 – Present",
+      "description": "I develop and maintain a Node.js service that connects the product’s Ruby backend to Solana through an HTTP API. The backend prepares transactions, tracks their execution and confirmation, and records payment states and statuses in PostgreSQL using Prisma. I implement the preparation, validation and creation of Solana accounts, and work with the Ruby team on API contracts, retries and error handling. The service also supports compressed NFT minting and verification.",
+      "stack": [
+        "Node.js",
+        "NestJS",
+        "Jest",
+        "Mocha",
+        "web3.js",
+        "PostgreSQL",
+        "Prisma"
       ]
     },
     {
       "company": "ToTheMoon",
-      "role": "Solana Developer",
-      "period": "Apr 2024 – Nov 2025",
-      "bullets": [
-        "Wrote the smart contracts for a token launchpad: fair launches, automated liquidity locking, whitelists, and migration to Raydium.",
-        "Built a DEX integration SDK to trade across Raydium, Pump.fun, Moonshot, Orca and Jupiter from one interface.",
-        "Built the onboarding frontend so teams could create and launch their tokens themselves."
+      "role": "Full-Stack / Solana Developer",
+      "period": "Apr 2025 – Nov 2025",
+      "description": "I worked on the Node.js backend for a token launch and streaming platform. My responsibilities included WebRTC functionality using Janus, integrations with Twitch and YouTube, and WebSocket communication with the client. I designed relational database schemas in PostgreSQL and worked with Prisma and Redis. I also developed a TypeScript SDK with a shared interface for Raydium, Pump.fun, Moonshot, Orca and Jupiter, built the token launch onboarding interface, and wrote Rust smart contracts for launches, liquidity locking, whitelists and migration to Raydium.",
+      "stack": [
+        "Node.js",
+        "NestJS",
+        "Jest",
+        "Mocha",
+        "web3.js",
+        "PostgreSQL",
+        "Prisma",
+        "WebSocket",
+        "Redis",
+        "WebRTC",
+        "Janus"
       ]
     },
     {
       "company": "BullPerks",
-      "role": "Solana Smart Contract Developer",
+      "role": "Node.js / Solana Developer",
       "period": "Aug 2024 – Apr 2025",
-      "bullets": [
-        "Wrote, tested and deployed Solana programs in Rust with the Solana SDK and Anchor.",
-        "Added Ed25519 signature verification and replay protection to keep on-chain actions safe from forged or repeated transactions.",
-        "Maintained the Node.js backend that bridges chain and server: wallet calls, transaction processing, and on-chain data sync."
+      "description": "I developed and maintained a Node.js backend in a microservice architecture, integrating the product with Solana through wallet interactions, transaction processing and on-chain data synchronisation. I worked with MongoDB through Mongoose and with Redis. I also developed and tested the Rust programs behind these flows, implementing signature verification and replay protection for on-chain actions.",
+      "stack": [
+        "Node.js",
+        "MongoDB",
+        "Mongoose",
+        "Redis",
+        "Rust",
+        "Solana"
       ]
     },
     {
       "company": "frakt.xyz",
-      "role": "Node.js → Rust / Solana Developer",
+      "role": "Node.js Developer → Full-Stack Web3",
       "period": "May 2023 – Aug 2024",
-      "bullets": [
-        "Started on the Node.js backend, then moved to Rust and Solana work across the full Web3 stack (Anchor, web3.js, TypeScript).",
-        "Built an on-chain betting game in Rust with reward distribution handled fully on-chain."
+      "description": "I worked on the Node.js backend for a React application, developing its GraphQL API and BFF integration with the main backend. My responsibilities also included the React client and tests for Solana programs.",
+      "stack": [
+        "Node.js",
+        "GraphQL",
+        "React",
+        "Solana"
       ]
     },
     {
       "company": "xfamily.io",
       "role": "Node.js Backend Developer",
       "period": "Aug 2021 – Apr 2023",
-      "bullets": [
-        "Built the APIs and database for a large crypto-swap portal.",
-        "Used RabbitMQ for async jobs, Redis for cache, and Jest for tests; integrated with smart contracts."
+      "description": "I developed the backend for a crypto-swap portal, building APIs and integrations with external exchange services and smart contracts. I designed the relational database schema in PostgreSQL, used RabbitMQ for asynchronous jobs and Redis for caching, and wrote service tests with Jest.",
+      "stack": [
+        "Node.js",
+        "PostgreSQL",
+        "RabbitMQ",
+        "Redis",
+        "Jest"
       ]
     },
     {
       "company": "Ownix.com",
       "role": "Node.js Developer",
       "period": "Mar 2020 – Aug 2021",
-      "bullets": [
-        "Built backend services for an NFT-sales startup, with real-time features over WebSocket and SSE.",
-        "Worked with PostgreSQL, Redis, a microservice setup, and third-party integrations."
+      "description": "I developed Node.js backend services for an NFT auction product in a microservice architecture. The work included relational data storage in PostgreSQL, caching with Redis, third-party integrations and realtime bidding updates over WebSocket and SSE.",
+      "stack": [
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "WebSocket",
+        "SSE"
       ]
     },
     {
       "company": "P2P.org",
       "role": "Front-End Developer",
       "period": "Aug 2019 – Mar 2020",
-      "bullets": [
-        "Built React and Vue interfaces with Redux and backend API integration. Moved into web3 development here."
+      "description": "I developed React and Vue interfaces, managed application state with Redux and integrated the frontend with backend APIs.",
+      "stack": [
+        "React",
+        "Vue",
+        "Redux"
       ]
     },
     {
       "company": "Zensoft.io",
       "role": "Front-End Developer → Team Lead",
       "period": "Dec 2017 – Aug 2019",
-      "bullets": [
-        "Built SPAs, started Node.js backend work, and grew into a team lead role (planning, architecture, code reviews)."
+      "description": "I developed single-page applications and began working on Node.js backend functionality. Later, I led a small frontend team, taking responsibility for planning, architecture decisions and code reviews.",
+      "stack": [
+        "JavaScript",
+        "Node.js",
+        "SPA"
       ]
     },
     {
       "company": "Svetofor.info",
       "role": "Front-End Developer",
       "period": "2017",
-      "bullets": [
-        "Turned designs into working website frontends — HTML/CSS markup plus JavaScript for the interactive parts. First dev job and the start of the whole path."
+      "description": "I built website interfaces from designs, implementing layouts and interactive features with HTML, CSS and JavaScript.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
       ]
     }
   ],
-
   "languages": [
-    { "name": "English", "level": "Working proficiency" },
-    { "name": "Russian", "level": "Native" }
+    {
+      "name": "English",
+      "level": "Working proficiency"
+    },
+    {
+      "name": "Russian",
+      "level": "Native"
+    }
   ]
 }
